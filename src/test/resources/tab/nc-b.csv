@@ -1,0 +1,9 @@
+﻿groupId	artifactId	version	license	organization	url
+ch.qos.logback	logback-classic	1.2.11
+org.springframework	spring-aop	5.3.22
+org.springframework	spring-aspects	5.3.22
+org.springframework	spring-beans	5.3.22
+org.springframework	spring-context	5.3.22
+org.springframework	spring-context-support	5.3.22
+org.springframework	spring-expression	5.3.22
+org.springframework	spring-jcl	5.3.22

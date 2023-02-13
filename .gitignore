@@ -1,0 +1,20 @@
+## IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+## Maven
+target/
+dependency-reduced-*.xml
+
+## macOS
+.DS_Store
+
+## tutorials temp file
+rocksdb-data/
+ratis-data/
+jmh-*.json
+*.arrow
+logs/
+ignite/
