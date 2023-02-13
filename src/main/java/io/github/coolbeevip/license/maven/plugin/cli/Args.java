@@ -22,7 +22,7 @@ public class Args {
   @Parameter(names = "-path", description = "CSV文件所在的目录", required = true)
   public String path;
 
-  @Parameter(names = "-output", description = "合并后的文件名", required = true)
+  @Parameter(names = "-output", description = "输出合并后的路径", required = true)
   public String output;
 
   @Parameter(names = "-separator", description = "CSV 分隔符")

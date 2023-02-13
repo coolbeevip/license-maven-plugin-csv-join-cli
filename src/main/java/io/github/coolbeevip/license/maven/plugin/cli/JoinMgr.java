@@ -27,6 +27,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -90,7 +91,7 @@ public class JoinMgr {
       keyIdx.incrementAndGet();
     });
 
-    FileWriter fileWriter = new FileWriter(outputPath.toFile());
+    FileWriter fileWriter = new FileWriter(Paths.get(outputPath.toString(), "JOINED.CSV").toFile());
     try (PrintWriter printWriter = new PrintWriter(fileWriter)) {
       printWriter.println("artifact\t" + csvArtifactMap.keySet().stream().collect(Collectors.joining("\t")));
       for (String[] line : versions) {
