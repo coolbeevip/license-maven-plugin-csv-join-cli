@@ -33,7 +33,7 @@ public class Main {
     JoinMgr mgr = new JoinMgr(cliArgs.separator);
     File[] csvFiles = Paths.get(cliArgs.path).toFile().listFiles();
     for (File file : csvFiles) {
-      if (file.getName().endsWith(".csv")) {
+      if (file.getName().toLowerCase().endsWith(".csv")) {
         mgr.addCsv(file.toPath());
       }
     }
